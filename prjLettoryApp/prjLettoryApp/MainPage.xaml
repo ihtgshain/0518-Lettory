@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prjLettoryApp.MainPage">
+    <StackLayout  Spacing="0">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+        <StackLayout HorizontalOptions="FillAndExpand">
+            <Frame Padding="5,5" BackgroundColor="LightYellow">
+                <Button Text="Lottery" Clicked="DrawLottery" BackgroundColor="Gray"/>
+            </Frame>
+        </StackLayout>
+        <StackLayout HorizontalOptions="FillAndExpand">
+            <Frame Padding="5,5" BackgroundColor="LightYellow">
+                <Button x:Name="btnSort" Text="Bubble Sort" Clicked="Sort" BackgroundColor="Gray"/>
+            </Frame>
+        </StackLayout>
+        
+    </StackLayout>
+        <StackLayout Orientation="Horizontal" x:Name="stackLettory" HorizontalOptions="Center" Spacing="30"/>
+        <Label x:Name="labInfo"  Text="Please Click Lottery Button First" 
+               FontSize="Small" HorizontalTextAlignment="Center" TextColor="OrangeRed"/>
+    </StackLayout>
+</ContentPage>
